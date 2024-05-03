@@ -1,10 +1,12 @@
+import { Montserrat as FontSans } from "next/font/google";
+
 import type { Metadata } from "next";
 
-import { Montserrat } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 import "@/app/styles/globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: {
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="en">
-			<body className={montserrat.className}>{children}</body>
+			<body className={cn("font-sans antialiased", fontSans.variable)}>{children}</body>
 		</html>
 	);
 };
