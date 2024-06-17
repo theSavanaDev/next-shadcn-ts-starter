@@ -1,4 +1,4 @@
-const BaseLayout = ({ children }: { children: React.ReactNode }) => {
+const HomeLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div className="flex h-screen flex-col">
 			<header>Header Section</header>
@@ -10,4 +10,4 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => {
 	);
 };
 
-export default BaseLayout;
+export default HomeLayout;

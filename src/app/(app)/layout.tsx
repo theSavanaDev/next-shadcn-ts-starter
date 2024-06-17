@@ -4,13 +4,13 @@ import type { Metadata } from "next";
 
 import { cn } from "@/lib/utils";
 
-import "@/app/styles/globals.css";
+import "@/app/globals.css";
 
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: {
-		default: "Next.JS Tailwind CSS Starter Template",
+		default: "Next.JS Starter Template",
 		template: "%s | Superior Software Solutions",
 	},
 	description: "Starter template for Next.JS projects using Tailwind CSS.",
